@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://edwinmhz.github.io/app_peliculas/",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "webpack-dev-server --mode development --open",
     "production": "webpack --mode production"
   },
@@ -20,6 +23,7 @@
     "babel-loader": "^8.1.0",
     "bootswatch": "^4.5.2",
     "css-loader": "^4.3.0",
+    "gh-pages": "^3.1.0",
     "html-webpack-plugin": "^4.5.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
